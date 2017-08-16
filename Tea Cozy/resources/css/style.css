@@ -1,0 +1,155 @@
+/* Everything */
+* {
+  font-family: Helvetica, sans-serif;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+h2, h3, h4 {
+  padding: 10px;
+  margin: 0px;
+}
+/*Header Section*/
+header {
+  position: fixed;
+  display: flex;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 3;
+  top: 0px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header span {
+  text-decoration: underline;
+  padding: 20px 10px;
+}
+
+body {
+  font-size: 22px;
+  text-align: center;
+}
+
+.logo img{
+  padding-left: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+/*Conten Container*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+/*Mission Section*/
+.our_mission {
+  display: flex;
+  background-image: url(./img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission_content {
+  display: flex;
+  background-color: black;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*Tea Section*/
+.tea {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.tea_of_month {
+  display: flex;
+  width: 1000px;
+  height: 700px;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.tea_content_image {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tea img {
+  width: 300px;
+  height: 200px;
+}
+
+.tea .title {
+  padding-top: 10px;
+}
+
+.tea span {
+  font-weight: bold;
+}
+/*Loction Section*/
+.locals {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 500px;
+  background-image: url(./img-locations-background.jpg);
+  align-items: center;
+  justify-content: center;
+}
+
+.locals h2 {
+  padding-bottom: 15px;
+  background-color: transparent;
+}
+
+.local_tiles {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+.tile {
+  display: flex;
+  opacity: 1;
+  width: 300px;
+  margin-right: 40px;
+  flex-direction: column;
+}
+
+/*Footer Section*/
+.copyright {
+  text-align: left;
+  padding-left: 20px;
+}

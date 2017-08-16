@@ -1,0 +1,315 @@
+* {
+  font-size: 18px;
+  line-height: 1.4rem;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.site-container {
+  display: flex;
+  width: 960px;
+  flex-direction: column;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+div {
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: cadetblue;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  margin-top: 1rem;
+}
+
+header img{
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav-container {
+  margin-right: 1rem;
+  list-style-type: disc;
+}
+
+@media only screen and (min-width: 480px) {
+  .mobile-nav-container {
+    display: none;
+  }
+}
+ul li {
+  padding: 0 1rem;
+  display: inline;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 30rem;
+  background-image: url("./glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-text-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 960px;
+  height: 27rem;
+  padding-right: 2rem;
+  margin: auto;
+}
+
+.banner-text {
+  background-color: white;
+  font-weight: bold;
+  position: relative;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  padding: 1.5rem 3rem 1.5rem 5rem;
+  top: 10rem;
+  right: -2rem;
+  height: 2.4rem;
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.selling-points {
+  display: flex;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem auto;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 5rem;
+  height: 8rem;
+  height: auto;
+  margin: 0 3rem;
+  text-align: center;
+}
+
+ .book-container {
+  width: 3.5rem;
+}
+
+ .ruler-container,
+  .truck-container {
+  width: 5rem;
+}
+
+.image-container p {
+  margin-bottom: 0;
+}
+
+.store-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.info {
+  padding: 0;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+  width: 35%;
+}
+
+.title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+footer {
+  background-color: azure;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem 0;
+}
+
+.copyright img {
+  padding-left: 4rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+/*Tablet Section*/
+
+@media only screen and (max-width:720px) {
+  /*Entire Page*/
+  .site-container {
+    width: 100%;
+  }
+
+  /*Header Section*/
+  header {
+    margin-top: 0;
+
+  }
+
+  /*Banner Section*/
+  .banner-text {
+    top: 5rem;
+    right: 0;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  .banner-container {
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+/*Entier page*/
+  .site-container {
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+/*Header Section*/
+    .logo span {
+      display: none;
+    }
+
+    .desktop-nav-container {
+      display: none;
+    }
+
+    .mobile-nav-container {
+      margin: 1rem 2rem;
+    }
+
+  /*Banner Section*/
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    height: 17rem;
+    background-size: cover;
+    width: 100%;
+    }
+
+  .banner-text-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 17rem;
+    padding-right: 0;
+  }
+
+  .banner-text {
+    top: 9rem;
+    padding: 1rem 0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    }
+
+  /*Selling-points Section*/
+  .selling-points {
+    display: flex;
+    width: 5rem;
+    height: auto;
+    margin: 3.77rem auto;
+    align-items: center;
+    flex-direction: column;
+    }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 5rem;
+    height: 8rem;
+    margin-bottom: 1.54rem;
+    text-align: center;
+    font-size: 0.77rem;
+    }
+
+/*Info Section*/
+
+  .store-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+    width: 100%;
+    }
+
+ .info {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+   }
+
+ .title {
+   background-color: cadetblue;
+   padding: 0.5rem 1.25rem;
+   font-weight: bold;
+   font-size: 1rem;
+   text-align: center;
+   }
+
+  .info p {
+    font-size: 0.77rem;
+    padding-bottom: 4rem;
+  }
+
+/*Copyright Section*/
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  }
+
+  .copyright span {
+    display: none;
+  }
+
+  .copyright img{
+    padding: 0;
+  }
+
+}

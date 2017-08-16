@@ -1,0 +1,285 @@
+/*General Page Section*/
+* {
+  font-family: Helvetica, sans-serif;
+  text-size: 18px;
+}
+
+html {
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4rem;
+}
+
+header {
+  background-color: black;
+}
+
+div {
+  display: block;
+ }
+
+.container {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/*Agent Logo*/
+.logo {
+  display: flex;
+  align-items:center;
+}
+
+.logo img {
+  height: 1.5em;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  padding: 0.66rem 0;
+  color: white;
+  display: inline;
+}
+
+/*Banner Section*/
+.banner-container {
+  background-image: url("./moto.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+}
+
+.banner-text-container {
+  display: block;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+}
+
+h1 ,h4 {
+  font-weight: bold;
+}
+
+.banner-text-container h1 {
+  font-size: 2rem;
+  line-height: 1.2em;
+  margin: 0.25rem 0;
+}
+
+.banner-text-container h4 {
+  font-size: 1rem;
+}
+
+/*Main Body secton*/
+.main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+}
+
+.main nav {
+  background-color: firebrick;
+}
+
+.normal-nav-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  list-style: none;
+  flex-direction: row;
+}
+
+@media only screen and (min-width:1024px){
+  .mobile-nav-container {
+    display: none;
+    text-align: center;
+  }
+}
+
+.main-body {
+  background-color: white;
+}
+
+/*Store Section*/
+.store-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+
+ #exploding-pen, #cellular-watch ,#thermal-glasses{
+  width: 30%;
+}
+
+.image-container {
+  border: 4px solid black;
+  padding: 2rem 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+}
+
+.item img {
+  height: 9rem;
+  width: 9rem;
+}
+
+.item p {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+/*Store Information Section*/
+.store-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  width: 35%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.title {
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+.info p {
+  color: black;
+  padding: 0
+}
+
+/*Copyright Section*/
+footer {
+  color: white;
+  height: 5rem;
+  background-color: black;
+
+}
+
+.container .copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5rem;
+}
+
+/*Tablet Section*/
+@media only screen and (max-width:1024px){
+  .normal-nav-container{
+    display: none;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0;
+    list-style: none;
+    flex-direction: row;
+  }
+
+  #thermal-glasses {
+    display: none;
+  }
+
+   #exploding-pen, #cellular-watch {
+    width: 47%;
+  }
+
+}
+
+/*Mobile Section*/
+@media only screen and (max-width:470px){
+  .normal-nav-container{
+    display: none;
+  }
+
+/*Navigation Section*/
+  .mobile-nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0;
+    list-style: none;
+    flex-direction: row;
+  }
+
+  /*Banner Section*/
+  .banner-container {
+    background-image: url("./moto.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+  }
+
+  .banner-text-container {
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 1em 2em;
+    position: relative;
+    top: 10em;
+  }
+
+  .banner-text-container h1 {
+    font-size: 1rem;
+    line-height: 1.2em;
+    margin: 0.25rem 0;
+  }
+
+  .banner-text-container h4 {
+    font-size: 0.77rem;
+  }
+
+  /*Store Section*/
+  /*Products*/
+    #thermal-glasses, #cellular-watch {
+      display: none;
+    }
+
+     #exploding-pen {
+      width: 90%;
+    }
+
+    .store-items {
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0 0 0;
+    }
+
+  /*Store Information*/
+  .store-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .info {
+  padding-bottom: 0.5rem;
+  width: 90%;
+  margin: 0;
+  }
+
+}
