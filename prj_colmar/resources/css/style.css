@@ -1,0 +1,525 @@
+/*Universal Rules*/
+@font-face {
+  font-family: 'Droid Sans';
+  src: url(../resources/fonts/DroidSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url(../resources/fonts/Inconsolata-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../resources/fonts/Raleway-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../resources/fonts/Raleway-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+ html {
+   font-size: 16px;
+}
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: #4C4B4A;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Droid Sans', sans-serif;
+  }
+
+  a {
+    font-family: 'Droid Sans', sans-serif;
+    text-decoration: none;
+    color: #297FB2;
+  }
+
+  a:visited {
+    color: #1BA5B2;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .section_title {
+    text-align: center;
+  }
+/*Desktop Rules*/
+
+  /*Header Section*/
+  header {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    }
+
+  .header_desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease-out 0.2s;
+  }
+
+  .header_desktop:hover {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (min-width:930px) {
+    .header_mobile {
+      display: none;
+    }
+  }
+
+  header .logo {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    left-padding:1.5;
+  }
+
+  .logo #colmar {
+    font-weight: bold;
+  }
+
+  .logo #academy {
+    color: gray;
+  }
+
+  .logo img:hover {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header ul li {
+    padding-right: 1rem;
+  }
+
+  header a:hover {
+    transition: all 0.4s ease-out 0.2s;
+  }
+  header ul li a:hover {
+  color: #4C4B4A;
+  }
+
+    header ul:last-child {
+  padding-right: 1.5rem;
+  }
+  /*Banner Section*/
+  .banner {
+    display: flex;
+    background-color: #E0DCCB;
+  }
+  .banner img {
+    width: 60%;
+    margin: 2rem 1.5rem;
+  }
+
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .jumbotron p {
+    text-align: center;
+    color: white;
+    background-color: #4C4B4A;
+    font-size: 1.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 5rem;
+    transition: all 0.4s ease-out 0.2s;
+  }
+
+  .jumbotron p:hover {
+    box-shadow: -1px 2px 3px 4px white;
+    background-color: #FFF;
+  }
+
+  /*Main Body*/
+
+    /*Top Section*/
+      /*Main Content*/
+      .information {
+        display: flex;
+        padding: 2rem 0 2rem 1.5rem;
+        width: auto;
+      }
+
+      .information .main_image_container {
+        width: 60%;
+        margin-right: 1.5rem;
+      }
+
+      .main_image_container img {
+        width:100%;
+      }
+
+      .image_container .quote {
+          margin-top: 2rem;
+      }
+
+      .quote p {
+        margin-top: 1.5rem;
+      }
+
+      /*Quick tabs*/
+      .information .quick_tabs {
+        width: 40%;
+      }
+
+      .information .quick_tabs .tab {
+        display: flex;
+      }
+
+      .information .quick_tabs .tab:last-child {
+        background-color: #E0DCCB;
+        border-radius: 1rem;
+        border-left: 1.5px solid #E0DCCB;
+      }
+
+      .information .quick_tabs img {
+        height: auto;
+        width: 35%;
+        margin: 1rem;
+      }
+
+      @media only screen and (min-width: 930px) {
+        .image_mobile {
+          display: none;
+        }
+      }
+
+      .information .quick_tabs .content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 65%;
+        justify-content: center;
+      }
+
+      .orientation {
+        border-radius: 1rem;
+        border-left: 1.5px solid #E0DCCB;
+        border-bottom: 1.5px solid #E0DCCB;
+      }
+
+      .campus {
+        border-radius: 1rem;
+        border-left: 1.5px solid #E0DCCB;
+        border-top: 1.5px solid #E0DCCB;
+      }
+
+
+    /*Mid Section*/
+    .courses {
+      background-color: #F2FAFF;
+      padding: 2rem 4.5rem;
+    }
+
+    .courses .title {
+      text-align: center;
+    }
+
+    @media only screen and (min-width:930px){
+      .offers_mobile {
+        display: none;
+      }
+    }
+
+    .courses .offers_desktop {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .courses .offers_desktop .row_one {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .courses .offers_desktop .row_two {
+      display: flex;
+    }
+
+    .offers_desktop .course {
+      margin-right: 2rem;
+      width: 100%;
+      transition: all 0.5s ease-out 0.2s
+    }
+
+    .offers_desktop .course:hover {
+      background-color: #E0DCCB;
+      color: #7D7871;
+      border-radius: 1rem;
+      box-shadow: inset 0 0 8px 3px white;
+    }
+
+    .offers_desktop .course img {
+      width:100%;
+    }
+
+    .offers_desktop .row_one .course:last-child {
+      margin-right:0;
+    }
+
+    .offers_desktop .row_two .course:last-child{
+      margin-right:0;
+    }
+
+    .offers_desktop .section .image_container {
+      height: auto;
+      width: 100%;
+    }
+
+    .offers_desktop .section .content {
+      margin: 1rem 0 1.5rem 1rem;
+    }
+
+    .section .content .course_title {
+      display: block;
+      margin: 0.5rem 0;
+    }
+
+    /*Lower Section*/
+    .thesis {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      padding: 2rem 0 2rem 1.5rem;
+    }
+
+    .thesis:hover {
+      background-color: #297FB2;
+      color:white;
+    }
+
+    .thesis .content_container {
+      display: flex;
+      width: inherit;
+    }
+
+    .thesis .video_container {
+      width: 60%;
+      margin-right: 1.5rem;
+    }
+
+    .video_container .content {
+      margin-top: 1.5rem;
+    }
+
+    .video_container .content p{
+      margin-top: 0.5rem;
+    }
+
+    .thesis .quick_tabs {
+      width: 40%;
+      transition: all 0.5s ease-out 0.3s;
+    }
+
+    .thesis .quick_tabs:hover {
+      border-left: 1px solid white;
+      border-radius: 1.5rem;
+    }
+
+    .thesis .quick_tabs .tab {
+      display: flex;
+      padding: 1rem 0 1rem 1rem;
+      transition: all 0.7s ease-out 0s;
+    }
+
+    .thesis .quick_tabs .tab:hover {
+      box-shadow: -3px 2px 7px 0.5px white;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      border-radius: 1.5rem;
+    }
+
+    .thesis .tab .image_container {
+      width: 35%;
+      height: auto;
+    }
+
+    .thesis .tab .image_container img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .thesis .tab img {
+      width: 100%;
+    }
+
+    .thesis .tab .content{
+      width: 65%;
+      justify-content: center;
+      margin-left: 1rem;
+      height: auto;
+    }
+
+  /*Footer Section*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    font-family: 'Inconsolata', monospace;
+  }
+
+
+  footer nav {
+    margin-right: 1.5rem;
+  }
+
+  footer nav ul{
+    margin: 0;
+  }
+
+
+/*Mobile Rules*/
+@media only screen and (max-width: 930px)  {
+
+  /*Header Section*/
+    .header_desktop {
+      display: none;
+    }
+
+    header {
+      height: 4rem;
+    }
+
+    .header_mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+  /*Banner Section*/
+    .banner {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .banner img {
+      width: 100%;
+      margin: 0;
+    }
+
+    .banner .jumbotron {
+      width: auto;
+      padding: 2rem 1rem;
+    }
+
+    .jumbotron h1{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .jumbotron h2{
+      margin-bottom: 1.5rem;
+    }
+  /*Main Body*/
+
+    /*Top Section*/
+      .information {
+        flex-direction: column;
+        width: auto;
+      }
+
+      .information .main_image_container {
+        display: none;
+      }
+
+      .image_desktop {
+        display: none;
+      }
+
+      .information .quick_tabs {
+        width: auto;
+        padding: 1rem 1rem 2rem 1rem;
+      }
+
+      .information .tab {
+        margin-bottom: 4rem;
+      }
+
+      .information .tab:last-child {
+        margin-bottom: 0;
+      }
+
+      .information .tab .content {
+        padding-left: 1rem;
+      }
+
+    /*Mid Section*/
+      .courses {
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem;
+      }
+
+      .offers_desktop {
+        display: none !important;
+      }
+
+      .offers_mobile h2 {
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin-bottom:0;
+        text-align: center;
+        background-color: #E0DCCB;
+        border-radius: 1rem;
+        transition: all 0.7s ease-out 0s;
+      }
+
+      .offers_mobile h2:hover {
+        background-color: white;
+        box-shadow: 0px 0px 0 3px white;
+      }
+
+      .offers_mobile h2:last-child {
+        margin-bottom: 0;
+      }
+
+    /*Lower Section*/
+    .thesis {
+      padding: 2rem 0 1.5rem 0;
+      flex-direction: column;
+    }
+
+    .thesis .video_container {
+      width: 100%;
+      margin: 0;
+    }
+
+    .thesis .video_container .content {
+      display: none;
+    }
+
+    .thesis .quick_tabs {
+      display: none;
+    }
+  /*Footer Section*/
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    padding: 1rem 0;
+  }
+  footer nav {
+    display: none;
+  }
+}
